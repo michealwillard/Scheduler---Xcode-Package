@@ -7,30 +7,24 @@
 //
 
 import XCTest
-@testable import Scheduler
+import UIKit
 
 class SchedulerTests: XCTestCase {
+    // MARK: Scheduler Tests
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    // Tests to confirm that the Game initializer returns when no opp_name or location is entered
+    func testGameInitialization() {
+        /*
+        // Success Case.
+        let potentialGame = Game(opp_name: "Rays", location: "Chief Sealth High School", date: "9/2/2016", time: "7:00PM")
+        XCTAssertNotNil(potentialGame)
+        
+        // Falure Cases.
+        let noOppName = Game(opp_name: "", location: "Chief Sealth High School", date: "9/2/2016", time: "7:00PM")
+        XCTAssertNotNil(noOppName)
+        
+        let noLocation = Game(opp_name: "Rays", location: "", date: "9/2/2016", time: "7:00PM")
+        XCTAssertNotNil(noLocation)
+        */
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
